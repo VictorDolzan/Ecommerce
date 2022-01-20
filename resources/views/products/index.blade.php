@@ -7,10 +7,11 @@
     <title>Products</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <form action="/products/{index}">
-        <button type="submit">Avançar</button>
 
-    </form>
+    <h1>Todos os produtos</h1>
+
+    @foreach($products as $prod)
+    <h2>{{ $prod->name}}</h2>
+    @endforeach
 </body>
 </html>
